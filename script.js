@@ -1,30 +1,30 @@
 
-// * Call stack
-    // var n = 2;
-    // function square(num){
-    //     var ans = num*num;
-    //     return ans;
-    // }
-    // var square2 = square(n);
-    // var square4 = square(4)
+/* * Call stack
+    var n = 2;
+    function square(num){
+        var ans = num*num;
+        return ans;
+    }
+    var square2 = square(n);
+    var square4 = square(4)
 
-// * Hoisting
+* Hoisting
 
-    // var x = 7; 
-    // console.log(getName);
-    // function getName(){
-    //     console.log("Hello");
-    // }
-    // getName();
+    var x = 7; 
+    console.log(getName);
+    function getName(){
+        console.log("Hello");
+    }
+    getName();
 
-    // getName();
-    // let getName = () =>{
-    //     console.log("Hi");
-    // }
+    getName();
+    let getName = () =>{
+        console.log("Hi");
+    }
 
     
 
-//4.How function works
+ **.How function works
     //case 1
     var x = 1;
     a();
@@ -37,4 +37,13 @@
     function b(){
         var x = 100;
         console.log(x);
+    }*/
+
+// Lexical Scope,Scope Chain,Lexical Environment
+ function a(){
+    function b(){
+        console.log(x);
     }
+ }
+ var x = 10;
+ a();
